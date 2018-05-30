@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        /*{
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "webRoot": "${workspaceFolder}",
+            "trace":"verbose",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "*": "${webRoot}/*"
+            }
+        },
+        {
+            "type": "node",
+            "request":"launch",
+            "name": "server-launch",
+            //"runtimeExecutable": "${workspaceRoot}/.bin/start",
+            "runtimeArgs": [
+                "app.js",
+                "--inspect-brk=9222"
+            ],
+            //"program":"${workspaceRoot}/app.js",
+            "restart":true,
+            //"port":9222,
+            "protocol":"inspector",
+            "console":"integratedTerminal",
+            //"outFiles": [
+            //    "${workspaceRoot}/dist/***.js"
+            //],
+            "sourceMaps": true
+        },*/
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceRoot}",
+            "breakOnLoad": true,
+            "sourceMaps": true,
+            "cwd":"${workspaceRoot}"
+            /*"sourceMapPathOverrides": {
+              "*": "${workspaceFolder}"
+            }*/
+          }
+    ]
+}
+//in theory we can open with /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
